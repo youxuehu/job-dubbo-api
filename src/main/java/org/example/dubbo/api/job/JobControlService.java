@@ -1,5 +1,7 @@
 package org.example.dubbo.api.job;
 
+import com.example.common.model.RequestContext;
+
 /**
  * @author youxuehu
  * @version v1.0
@@ -9,5 +11,5 @@ package org.example.dubbo.api.job;
  */
 public interface JobControlService {
 
-    String submit(String cmd);
+    String submit(RequestContext requestContext, String cmd);
 }
